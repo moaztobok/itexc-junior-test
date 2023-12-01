@@ -7,12 +7,28 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors:{
+      fontColor : 'rgb(var(--font-color) / <alpha-value>)',
+      fontAccentColor : 'rgb(var(--gray-color) / <alpha-value>)',
+      blueColor : 'rgb(var(--blue-color) / <alpha-value>)',
+      orangeColor : 'rgb(var(--orange-color)/ <alpha-value>)',
+      darkColor : 'rgb(var(--dark-color) / <alpha-value>)',
+      bgColor : 'rgb(var(--background-color) / <alpha-value>)',
+      
+    },
+    fontFamily:{
+      'poppins':['poppins','sans-serif','sans-serif'],
+      'roboto':['roboto','sans-serif','sans-serif'],
+    },
+    screens: {
+
+      'lg': {'min': '1180px'},
+
+      'md': {'max': '1180px'},
+
+      'sm': {'max': '639px'},
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
     },
   },
   plugins: [],

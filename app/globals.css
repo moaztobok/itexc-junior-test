@@ -2,26 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  :root{
+    --font-color : 0 0 0;
+    --blue-color : 0 94 163;
+    --orange-color : 242 114 25;
+    --dark-color : 30 30 30;
+    --background-color : 255 255 255;
+    --gray-color : 196 196 196;
   }
 }
+@layer utilities {
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-center justify-start;
+  }
+
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+  .blueBold {
+    @apply text-blueColor font-semibold
+  }
+  .orange-fill {
+    @apply bg-orangeColor text-bgColor
+  }
+  .blue-fill{
+    @apply bg-blueColor text-bgColor
+  }
+  .orange-outline {
+    @apply border border-orangeColor text-orangeColor
+  }
+  .blue-outline {
+    @apply border border-blueColor text-blueColor
+  }
+}
+.selected{
+  translate: transfo;
+  position:relative;
+  transform: translateY(-10);
+}
+.selected::after{
+  content:'';
+  height: 100%;
+  width: 85%;
+  position:absolute;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgb(48, 158, 236);
+  background: linear-gradient(45deg, rgba(22,120,242,1) 0%, rgba(101,168,251,1) 100%);
+  border-bottom:6px solid rgb(242 114 25);
+  scale: 1.03;
+}
+@media only screen and (max-width: 1180px) {
+  .selected::after{
+    width: 100%;
+  }
 }
