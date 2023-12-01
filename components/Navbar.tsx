@@ -6,30 +6,16 @@ import Image from 'next/image'
 const NavBar = () => {
 
     const [showMenu,setShowMenu] =useState<Boolean>(false);
-    const preventScroll =(e:Event):void=>{
-        e.preventDefault();
-    }
-    const disableScroll= ():void =>{
-        document.addEventListener('scroll',preventScroll)
-    }
-    const enableScroll=():void=>{
-        document.addEventListener('scroll',preventScroll)
-    }
+
     useEffect(()=>{
         if(showMenu){
             document.body.style.overflow = 'hidden';
-
-            disableScroll();
         } else {
             document.body.style.overflowY = 'auto';
-            enableScroll();
         }
-        return () => {
-            enableScroll();
-        }
-    },[showMenu])
+    },)
   return (
-    <nav className='h-[10vh] w-full bg-red-500 flexBetween max-container py-5 px-10'>
+    <nav className='h-[10vh] w-full bg-red-500 flexBetween max-container py-5 paddingH'>
         <Image alt='logo' src='./Assets/icons/healthy24Logo.svg' width={200} height={100}/>
             <div className='flexCenter gap-10 font-medium md:hidden '>
             {

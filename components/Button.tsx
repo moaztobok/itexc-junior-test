@@ -7,7 +7,7 @@ interface buttonProps{
 }
 const Button = ({title,variant,type}:buttonProps) => {
   return (
-    <button className={`mt-auto w-40 px-2 py-4 ${variant}`}
+    <button className={`w-40 px-2 py-4 ${variant}`}
     type={type}>
       {title}
     </button>
