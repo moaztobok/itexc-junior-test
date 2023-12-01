@@ -21,9 +21,12 @@ const NavBar = () => {
             }
         }
         document.addEventListener('mousedown',handler);
+        return()=>{
+            document.removeEventListener('mousedown',handler);
+        }
     });
   return (
-    <nav className='h-[10vh] w-full bg-red-500 flexBetween max-container py-5 paddingH'>
+    <nav className='h-[10vh] w-full bg-red-500 flexBetween max-container py-5 paddingH overflow-hidden'>
         <Image alt='logo' src='./Assets/icons/healthy24Logo.svg' width={200} height={100}/>
             <div className='flexCenter gap-10 font-medium md:hidden '>
             {
@@ -46,9 +49,9 @@ const NavBar = () => {
                 <Image src='/Assets/icons/hamburger-menu.svg' alt='menuButton' width={30} height={30}/>        
             </button>
 
-            <div className='absolute h-screen w-[80%] shadow-2xl top-0 right-0 bg-bgColor flex flex-col py-10 p-5 gap-10 z-50 duration-200'
+            <div className='absolute h-screen w-[80%] shadow-2xl top-0 right-0 bg-bgColor flex flex-col py-10 p-5 gap-10 z-50'
             ref={menu}
-            style={{transform:`translateX(${showMenu ? '0%' : '100%' })`}}>
+            style={{transform:`translateX(${showMenu ? '0%' : '100%' })`,display:`${showMenu?'':'none'}`}}>
                 <div className='flexBetween'>
                 <Image alt='logo' src='./Assets/icons/healthy24Logo.svg' width={100} height={50}/>
                 <button

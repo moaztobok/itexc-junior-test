@@ -14,7 +14,7 @@ const config: Config = {
       orangeColor : 'rgb(var(--orange-color)/ <alpha-value>)',
       darkColor : 'rgb(var(--dark-color) / <alpha-value>)',
       bgColor : 'rgb(var(--background-color) / <alpha-value>)',
-      
+      blueishColor : 'rgb(var(--blueish-color) / <alpha-value>)',
     },
     fontFamily:{
       'poppins':['poppins','sans-serif','sans-serif'],
@@ -29,6 +29,10 @@ const config: Config = {
       'sm': {'max': '639px'},
     },
     extend: {
+
+      boxShadow: {
+        'BlueShadow': '0 35px 60px -15px rgba(63, 128, 240, 0.2)',
+      }
     },
   },
   plugins: [],

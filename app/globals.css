@@ -4,12 +4,13 @@
 
 @layer base {
   :root{
-    --font-color : 0 0 0;
+    --font-color : 30 30 30;
     --blue-color : 0 94 163;
     --orange-color : 242 114 25;
     --dark-color : 30 30 30;
     --background-color : 255 255 255;
     --gray-color : 196 196 196;
+    --blueish-color: 244 247 250;
   }
 }
 @layer utilities {
@@ -49,6 +50,9 @@
   .paddingH{
     @apply lg:px-10 md:px-5
   }
+  .title{
+    @apply text-[2.2rem] font-semibold
+  }
 }
 .selected{
   translate: transfo;
@@ -74,4 +78,24 @@
 }
 .no-scroll{
   overflow-y: hidden;
+}
+.decorated{
+  position: relative;
+  z-index: 1;
+}
+.decorated::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  background-image: url('../public/Assets/icons/plus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+.blue-gradient{
+  background: linear-gradient(45deg, rgba(22,120,242,1) 0%, rgba(101,168,251,1) 100%);
 }

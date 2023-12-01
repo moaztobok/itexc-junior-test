@@ -34,3 +34,38 @@ export const features=[
         desc:'Health education and resources'
     },
 ]
+export const Services = [
+    'Experienced and Professional Team',
+    'Comprehensive Services',
+    'User-Friendly Interface',
+    'Safe and Secure Data Storage',
+    'Personalized Care',
+    'Positive Reputation',
+    'Convenient Access to Healthcare Services.',
+]
+export const illnesses =[
+    {
+        name:'Cold & flu',
+        symptoms:['Cough','Headaches','Nausea & vomiting','Fever']
+    },
+    {
+        name:'Mental health',
+        symptoms:['Cough','Headaches','Nausea & vomiting','Fever']
+    },
+    {
+        name:'Mental health',
+        symptoms:['Cough','Headaches','Nausea & vomiting','Fever']
+    },
+    {
+        name:'Headaches',
+        symptoms:['Cough','Headaches','Nausea & vomiting','Fever']
+    },
+    {
+        name:'Everyday care',
+        symptoms:['Cough','Headaches','Nausea & vomiting','Fever']
+    },
+    {
+        name:'Allergies',
+        symptoms:['Cough','Headaches','Nausea & vomiting','Fever']
+    },
+]

@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='font-poppins overflow-x-hidden'>
+      <body className='font-poppins overflow-x-hidden text-fontColor'>
         <NavBar/>
         {children}
         </body>
