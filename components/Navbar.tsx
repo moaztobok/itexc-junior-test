@@ -1,20 +1,27 @@
 'use client';
-import React, { useState } from 'react'
+import React, { useState , useEffect , useRef} from 'react'
 import {Links} from '@/constants/index'
 import Link from 'next/link'
 import Image from 'next/image'
 const NavBar = () => {
-
+    const menu = useRef<HTMLDivElement>(null);
     const [showMenu,setShowMenu] =useState<Boolean>(false);
     const handleOpen =() => {
-        document.body.style.overflow = 'hidden';
+        document.body.classList.add("no-scroll")
         setShowMenu(true);
     };
     const handleClose =() => {
-        document.body.style.overflowY = 'auto';
+        document.body.classList.remove("no-scroll")
         setShowMenu(false);
     };
-
+    useEffect(()=>{
+        let handler =(e:Event)=>{
+            if(menu.current && !menu.current.contains(e.target as Node)){
+                setShowMenu(false);
+            }
+        }
+        document.addEventListener('mousedown',handler);
+    });
   return (
     <nav className='h-[10vh] w-full bg-red-500 flexBetween max-container py-5 paddingH'>
         <Image alt='logo' src='./Assets/icons/healthy24Logo.svg' width={200} height={100}/>
@@ -34,11 +41,13 @@ const NavBar = () => {
                 </div>           
             </div>
             <button className='lg:hidden'
-            onClick={handleOpen}>
+            onClick={handleOpen}
+            >
                 <Image src='/Assets/icons/hamburger-menu.svg' alt='menuButton' width={30} height={30}/>        
             </button>
 
             <div className='absolute h-screen w-[80%] shadow-2xl top-0 right-0 bg-bgColor flex flex-col py-10 p-5 gap-10 z-50 duration-200'
+            ref={menu}
             style={{transform:`translateX(${showMenu ? '0%' : '100%' })`}}>
                 <div className='flexBetween'>
                 <Image alt='logo' src='./Assets/icons/healthy24Logo.svg' width={100} height={50}/>
