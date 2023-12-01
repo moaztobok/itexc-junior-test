@@ -1,19 +1,20 @@
 'use client';
-import React, { useState , useEffect} from 'react'
+import React, { useState } from 'react'
 import {Links} from '@/constants/index'
 import Link from 'next/link'
 import Image from 'next/image'
 const NavBar = () => {
 
     const [showMenu,setShowMenu] =useState<Boolean>(false);
+    const handleOpen =() => {
+        document.body.style.overflow = 'hidden';
+        setShowMenu(true);
+    };
+    const handleClose =() => {
+        document.body.style.overflowY = 'auto';
+        setShowMenu(false);
+    };
 
-    useEffect(()=>{
-        if(showMenu){
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflowY = 'auto';
-        }
-    },)
   return (
     <nav className='h-[10vh] w-full bg-red-500 flexBetween max-container py-5 paddingH'>
         <Image alt='logo' src='./Assets/icons/healthy24Logo.svg' width={200} height={100}/>
@@ -33,7 +34,7 @@ const NavBar = () => {
                 </div>           
             </div>
             <button className='lg:hidden'
-            onClick={()=>{setShowMenu(true)}}>
+            onClick={handleOpen}>
                 <Image src='/Assets/icons/hamburger-menu.svg' alt='menuButton' width={30} height={30}/>        
             </button>
 
@@ -42,7 +43,7 @@ const NavBar = () => {
                 <div className='flexBetween'>
                 <Image alt='logo' src='./Assets/icons/healthy24Logo.svg' width={100} height={50}/>
                 <button
-                onClick={()=>{setShowMenu(false)}}>
+                onClick={handleClose}>
                 <Image src='/Assets/icons/close-icon.svg' alt='menuButton' width={20} height={20}/>        
                 </button>
                 </div>
