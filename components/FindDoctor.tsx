@@ -10,7 +10,7 @@ const FindDoctor = () => {
       <p >
       From rashes to colds, stress management to diabetes management, individual treatment plans are created around you. Our medical and mental health providers work together, keeping your personal journey protected and connected.
       </p>
-      <Button title='Get Started' variant='blue-outline' type='button' />
+      <Button title='Get Started' variant='blue-outline' type='button' onClick={()=>{}} />
     </div>
     <div className='flexCenter  py-20'>
         <Image src='/Assets/images/best-doctor-image.png' alt='about-image' width={500} height={500}/>

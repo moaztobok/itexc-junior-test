@@ -9,6 +9,7 @@ import HospitalSearch from '@/components/HospitalSearch'
 import TestimonialsSection from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
 import DoctorsSection from '@/components/DoctorsSection'
+import ContactUs from '@/components/ContactUs'
 
 const page = () => {
   return (
@@ -23,6 +24,7 @@ const page = () => {
       <TestimonialsSection/>
       <FAQ/>
       <DoctorsSection/>
+      <ContactUs/>
     </>
   )
 }

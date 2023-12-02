@@ -15,7 +15,7 @@ export const  Links =[
         title:'Contact us',
         url:'/'
     }
-]
+];
 export const features=[
     {
         image:'./Assets/icons/Online-consultation.svg',
@@ -33,7 +33,7 @@ export const features=[
         image:'./Assets/icons/Health&Education.svg',
         desc:'Health education and resources'
     },
-]
+];
 export const Services = [
     'Experienced and Professional Team',
     'Comprehensive Services',
@@ -42,7 +42,7 @@ export const Services = [
     'Personalized Care',
     'Positive Reputation',
     'Convenient Access to Healthcare Services.',
-]
+];
 export const illnesses =[
     {
         name:'Cold & flu',
@@ -68,7 +68,7 @@ export const illnesses =[
         name:'Allergies',
         symptoms:['Cough','Headaches','Nausea & vomiting','Fever']
     },
-]
+];
 export const Testimonials =[
     {
         desc:'Our caring and supportive team has experience working with patients face-to-face and dealing with mental health issues. Spend less time searching for help and more time connecting with someone you can trust.',
@@ -90,7 +90,7 @@ export const Testimonials =[
         position:'Our client',
         rating:5
     }
-]
+];
 export const Questions = [
     {
         question: 'Question text goes here',
@@ -102,5 +102,22 @@ export const Questions = [
     },    {
         question: 'Question text goes here',
         answer:'"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."'
+    },
+];
+export const contactInfo =[
+    {
+        icon:'/Assets/icons/email.svg',
+        contact:'Email',
+        desc:'Healthy 24.@Email.com'
+    },
+    {
+        icon:'/Assets/icons/location.svg',
+        contact:'Address',
+        desc:'Lorem ipsum dolor sit amet, consectetur 33'
+    },
+    {
+        icon:'/Assets/icons/phone.svg',
+        contact:'Phone Number',
+        desc:'+1 (555) 000-0000'
     },
 ]

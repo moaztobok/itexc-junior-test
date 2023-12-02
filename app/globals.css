@@ -57,6 +57,9 @@
   .title{
     @apply text-[2.2rem] font-semibold
   }
+  .input{
+    @apply p-4 bg-blueishColor text-fontAccentColor focus:border-orangeColor
+  }
 }
 .selected{
   translate: transfo;

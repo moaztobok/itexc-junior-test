@@ -28,7 +28,7 @@ const HospitalSearch = () => {
             <div className='flex flex-col gap-4 lg:max-w-[40%] lg:pl-16 paddingH'>
                 <h2 className='text-blueColor title font-normal'>Search the Nearest hospital from you</h2>
                 <p>Rumah sakit adalah bagian integral dari suatu organisasi sosial dan kesehatan dengan fungsi menyediakan pelayanan paripurna (komprehensif).</p>
-                <Button title='Search' variant='orange-fill' type='button'/>
+                <Button title='Search' variant='orange-fill' type='button' onClick={()=>{}}/>
             </div>
         </div>
     </section>

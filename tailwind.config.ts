@@ -41,8 +41,8 @@ const config: Config = {
         }
       },
       animation: {
-        extend: 'extend 0.5s ease-in-out',
-        contract:'contract 0.5s ease-in-out'
+        extend: 'extend 0.5s forwards',
+        contract:'contract 0.5s forwards'
       },
       boxShadow: {
         'BlueShadow': '0 35px 60px -15px rgba(63, 128, 240, 0.2)',
