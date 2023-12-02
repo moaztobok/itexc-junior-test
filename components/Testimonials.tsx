@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
 import { Testimonials } from '@/constants'
-import { Swiper, SwiperSlide ,useSwiper } from 'swiper/react';
+import { Swiper, SwiperRef, SwiperSlide ,useSwiper } from 'swiper/react';
 
 //swiper imports 
 import 'swiper/css'; // Import Swiper styles
@@ -25,7 +25,7 @@ import Image from 'next/image';
 
 const TestimonialsSection = () => {
     const swiper = useSwiper();
-    const swiperRef = useRef();
+    const swiperRef = useRef<SwiperRef>(null);
     useEffect(() => {
         if (swiperRef.current) {
           swiperRef.current.swiper.init();
