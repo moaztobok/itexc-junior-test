@@ -49,8 +49,8 @@ const TestimonialsSection = () => {
     backgroundSize:'cover',
     backgroundRepeat:'no-repeat'}}>
         <div className='lg:max-container flexCenter lg:flex-1 flex-col bg-bgColor lg:px-20 py-10  relative'>
-        <button className='absolute top-1/2 left-28' onClick={handlePrevSlide}><Image alt='left-btn' src='/Assets/icons/left-btn.svg' height={15} width={15} /></button>
-        <button className='absolute top-1/2 right-28'onClick={handleNextSlide}><Image alt='right-btn' src='/Assets/icons/right-btn.svg' height={15} width={15}/></button>
+        <button className='absolute top-1/2 left-28 z-30 md:hidden' onClick={handlePrevSlide}><Image alt='left-btn' src='/Assets/icons/left-btn.svg' height={15} width={15} /></button>
+        <button className='absolute top-1/2 right-28 z-30 md:hidden'onClick={handleNextSlide}><Image alt='right-btn' src='/Assets/icons/right-btn.svg' height={15} width={15}/></button>
             <div className='flexCenter flex-col gap-4 text-center font-semibold'>
                 <p className='text-orangeColor py-4 px-10 border-orangeColor border-b-2'>Testimonial</p>
                 <h2 className=' text-[1.5rem]'>You're in safe hands</h2>
