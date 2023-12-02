@@ -16,7 +16,7 @@ const AboutSection = () => {
       <div className='flex justify-end lg:w-1/2 py-20'>
         <div className='relative'>
           <Image src='/Assets/images/plants.png' alt='about-image' width={400} height={600}/>
-          <div className='bg-blueColor blue-gradient absolute px-10 py-10 text-[2rem] font-semibold flexCenter lg:left-[-100px] md:left-[18%] bottom-[-50px]'>
+          <div className='bg-blueColor blue-gradient absolute px-10 py-8 text-[2rem] font-semibold flexCenter lg:left-[-100px] md:left-[15%] bottom-[-50px]'>
               <span className='decorated text-bgColor'>Healthy 24.</span>
           </div>
         </div>

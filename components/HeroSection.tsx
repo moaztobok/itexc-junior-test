@@ -12,7 +12,7 @@ const HeroSection = () => {
       backgroundPosition:'right top'}}>
         <div className='max-container w-full paddingH flex h-full mb-40 md:mt-72'>
           <div className='lg:w-[40%] h-full flex flex-col gap-8 justify-center'>
-          <h1 className='text-[3rem] md:text-[2.5rem]'>Feel Better about Finding <span className='blueBold'>Healthcase</span></h1>
+          <h1 className='text-[3rem] md:text-[2.5rem]'>Feel Better about Finding <span className='blueBold'>Healthcare</span></h1>
           <p className='text-[1.2rem] md:text-[1rem]'>Healththy 24 Online ranks highest in telehealth satisfaction among direct-to-consumer brands.
           </p>
           <Button variant={'orange-fill'} title='Get Started' type='button'/>

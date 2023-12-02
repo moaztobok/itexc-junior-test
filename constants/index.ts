@@ -69,3 +69,25 @@ export const illnesses =[
         symptoms:['Cough','Headaches','Nausea & vomiting','Fever']
     },
 ]
+export const Testimonials =[
+    {
+        desc:'Our caring and supportive team has experience working with patients face-to-face and dealing with mental health issues. Spend less time searching for help and more time connecting with someone you can trust.',
+        avatar:'/Assets/images/Avatar Image.png',
+        name:'Christopher Nolan',
+        position:'Our client',
+        rating:5
+    },
+    {
+        desc:'Our caring and supportive team has experience working with patients face-to-face and dealing with mental health issues. Spend less time searching for help and more time connecting with someone you can trust.',
+        avatar:'/Assets/images/Avatar Image.png',
+        name:'Christopher Nolan',
+        position:'Our client',
+        rating:5
+    },    {
+        desc:'Our caring and supportive team has experience working with patients face-to-face and dealing with mental health issues. Spend less time searching for help and more time connecting with someone you can trust.',
+        avatar:'/Assets/images/Avatar Image.png',
+        name:'Christopher Nolan',
+        position:'Our client',
+        rating:5
+    }
+]

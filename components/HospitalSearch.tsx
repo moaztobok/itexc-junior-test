@@ -8,7 +8,7 @@ const HospitalSearch = () => {
         <div className='flexCenter flex-row flex-wrap w-full max-container'>
             <div className='lg:max-w-[50%] justify-start relative'>
                 <Image src='/Assets/images/hospital-search-image.png' alt='hospital' width={600} height={600}/>
-                <div className='grid grid-cols-[40px_auto] w-[250px] shadow-2xl p-4 gap-3 absolute lg:-right-10 bottom-24 bg-bgColor shadow-BlueShadow'>
+                <div className='grid grid-cols-[40px_auto] w-[250px] p-4 gap-3 absolute lg:-right-10 bottom-24 bg-bgColor shadow-BlueShadow'>
                 <div className='rounded-full flexCenter bg-blueColor aspect-square'>
                     <Image src='/Assets/icons/plus-hand.svg' alt='plus-hand' width={24} height={24}/>  
                 </div>
