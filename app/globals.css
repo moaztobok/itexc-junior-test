@@ -10,6 +10,7 @@
     --dark-color : 30 30 30;
     --background-color : 255 255 255;
     --gray-color : 196 196 196;
+    --dark-gray: 235 235 235;
     --blueish-color: 244 247 250;
   }
 }
@@ -46,6 +47,9 @@
   }
   .blue-outline {
     @apply border border-blueColor text-blueColor
+  }
+  .white-fill {
+    @apply text-fontColor bg-bgColor
   }
   .paddingH{
     @apply lg:px-10 md:px-5

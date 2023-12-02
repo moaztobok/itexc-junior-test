@@ -4,7 +4,7 @@ import Button from './Button'
 
 const HospitalSearch = () => {
   return (
-    <section className='w-screen min-h-[80vh] bg-bgColor flexCenter'>
+    <section className='w-screen min-h-screen bg-bgColor flexCenter'>
         <div className='flexCenter flex-row flex-wrap w-full max-container'>
             <div className='lg:max-w-[50%] justify-start relative'>
                 <Image src='/Assets/images/hospital-search-image.png' alt='hospital' width={600} height={600}/>

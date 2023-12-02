@@ -44,7 +44,7 @@ const TestimonialsSection = () => {
         }
       };
   return (
-    <section className='lg:min-h-screen flexCenter py-10 overflow-hidden'
+    <section className='lg:min-h-screen flexCenter py-20 overflow-hidden'
     style={{backgroundImage:'url(./Assets/images/testimonial-background.png)',
     backgroundSize:'cover',
     backgroundRepeat:'no-repeat'}}>

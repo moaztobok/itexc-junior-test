@@ -7,6 +7,8 @@ import FindDoctor from '@/components/FindDoctor'
 import Visits from '@/components/Visits'
 import HospitalSearch from '@/components/HospitalSearch'
 import TestimonialsSection from '@/components/Testimonials'
+import FAQ from '@/components/FAQ'
+import DoctorsSection from '@/components/DoctorsSection'
 
 const page = () => {
   return (
@@ -19,6 +21,8 @@ const page = () => {
       <Visits/>
       <HospitalSearch/>
       <TestimonialsSection/>
+      <FAQ/>
+      <DoctorsSection/>
     </>
   )
 }

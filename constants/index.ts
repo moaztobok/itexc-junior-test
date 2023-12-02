@@ -91,3 +91,16 @@ export const Testimonials =[
         rating:5
     }
 ]
+export const Questions = [
+    {
+        question: 'Question text goes here',
+        answer:'"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."'
+    },
+    {
+        question: 'Question text goes here',
+        answer:'"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."'
+    },    {
+        question: 'Question text goes here',
+        answer:'"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."'
+    },
+]

@@ -15,6 +15,7 @@ const config: Config = {
       darkColor : 'rgb(var(--dark-color) / <alpha-value>)',
       bgColor : 'rgb(var(--background-color) / <alpha-value>)',
       blueishColor : 'rgb(var(--blueish-color) / <alpha-value>)',
+      darkGray:'rgb(var(--dark-gray) /<alpha-value>)',
     },
     fontFamily:{
       'poppins':['poppins','sans-serif','sans-serif'],
@@ -29,7 +30,20 @@ const config: Config = {
       'sm': {'max': '639px'},
     },
     extend: {
-
+      keyframes: {
+        extend: {
+          '0%': { maxHeight: '0px', },
+          '100%': {maxHeight:'300px' },
+        },
+        contract:{
+          '0%': { maxHeight: '300px' },
+          '100%': {maxHeight:'0px' },
+        }
+      },
+      animation: {
+        extend: 'extend 0.5s ease-in-out',
+        contract:'contract 0.5s ease-in-out'
+      },
       boxShadow: {
         'BlueShadow': '0 35px 60px -15px rgba(63, 128, 240, 0.2)',
       }
