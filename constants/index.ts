@@ -120,4 +120,45 @@ export const contactInfo =[
         contact:'Phone Number',
         desc:'+1 (555) 000-0000'
     },
+];
+export const footerLinks = [
+    {
+        subject: 'Help center',
+        links : [
+            {
+                name:'Frequently Asked Questions',
+                url:'/'
+            },
+            {
+                name:'Driver Training Platform',
+                url:'/'
+            },
+            {
+                name:'Support',
+                url:'/'
+            },
+        ]
+    },
+    {
+        subject: 'Healthy 24',
+        links : [
+            {
+                name:'C.G.U',
+                url:'/'
+            },
+            {
+                name:'Privacy',
+                url:'/'
+            },
+            {
+                name:'Press',
+                url:'/'
+            },
+            {
+                name:'Partnership',
+                url:'/'
+            },
+        ]
+    },
+
 ]

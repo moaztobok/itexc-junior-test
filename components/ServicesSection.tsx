@@ -12,7 +12,7 @@ const ServicesSection = () => {
       </p>
       <ul className='flex flex-col gap-3'>
         {Services.map((service,index)=>
-          <li className='flex gap-3' key={index}><Image  alt='check' width={15} height={15} src='./Assets/icons/check.svg'/><p>{service}</p></li>
+          <li className='flex gap-3' key={index}><img  alt='check' width={15} height={15} src='./Assets/icons/check.svg'/><p>{service}</p></li>
         )}
       </ul>
     </div>

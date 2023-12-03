@@ -2,23 +2,7 @@
 import React, { useEffect, useRef } from 'react'
 import { Testimonials } from '@/constants'
 import { Swiper, SwiperRef, SwiperSlide ,useSwiper } from 'swiper/react';
-
-//swiper imports 
-import 'swiper/css'; // Import Swiper styles
-import 'swiper/css/navigation'; // Import Swiper navigation styles
-import 'swiper/css/pagination'; // Import Swiper pagination styles
-import 'swiper/css/effect-coverflow'; // Import Swiper coverflow effect styles
-import 'swiper/css/effect-fade'; // Import Swiper fade effect styles
-import 'swiper/css/effect-cube'; // Import Swiper cube effect styles
-import 'swiper/css/effect-flip'; // Import Swiper flip effect styles
-import 'swiper/css/autoplay'; // Import Swiper autoplay styles
-import 'swiper/css/scrollbar'; // Import Swiper scrollbar styles
-import 'swiper/css/thumbs'; // Import Swiper thumbs styles
-import 'swiper/css/zoom'; // Import Swiper zoom styles
-import 'swiper/css/keyboard'; // Import Swiper keyboard control styles
-import 'swiper/css/mousewheel'; // Import Swiper mousewheel control styles
 import 'swiper/css';
-
 import Image from 'next/image';
 const Carousel = () => {
     const swiper = useSwiper();
@@ -52,9 +36,10 @@ const Carousel = () => {
       onSwiper={(swiper) => console.log(swiper)}
       autoplay={{delay:3400, disableOnInteraction:false}}
     >
-     {Testimonials.map((Testimonial)=>
-     <SwiperSlide key={Testimonial.name}>
-        <div className='flexCenter flex-col gap-4 select-none' >
+     {Testimonials.map((Testimonial,index)=>
+     <div key={index}>
+     <SwiperSlide >
+        <div  className='flexCenter flex-col gap-4 select-none' >
             {/* Star Rating */}
             <div className='flexCenter flex-row gap-1
             '>             
@@ -75,7 +60,9 @@ const Carousel = () => {
                       <p>{Testimonial.position}</p>
             </div>
         </div>
-     </SwiperSlide>)} 
+     </SwiperSlide>
+     </div>
+     )} 
     </Swiper>
     </>
   )

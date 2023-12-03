@@ -10,6 +10,8 @@ import TestimonialsSection from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
 import DoctorsSection from '@/components/DoctorsSection'
 import ContactUs from '@/components/ContactUs'
+import Map from '@/components/Map'
+import Footer from '@/components/Footer'
 
 const page = () => {
   return (
@@ -25,6 +27,8 @@ const page = () => {
       <FAQ/>
       <DoctorsSection/>
       <ContactUs/>
+      <Map/>
+      <Footer/>
     </>
   )
 }

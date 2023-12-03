@@ -1,6 +1,6 @@
 import { type } from 'os'
 import React from 'react'
-type EmptyCallback = () => void;
+type EmptyCallback = () => {};
 
 interface buttonProps{
   title: string,
@@ -10,7 +10,7 @@ interface buttonProps{
 }
 const Button = ({title,variant,type,onClick}:buttonProps) => {
   return (
-    <button className={`w-40 px-2 py-4 ${variant}`}
+    <button className={`w-40 px-2 py-4 ${variant}`} 
     type={type}>
       {title}
     </button>
