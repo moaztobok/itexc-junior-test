@@ -1,17 +1,19 @@
 'use client'
-import React, { useEffect, useRef } from 'react'
-import { Testimonials } from '@/constants'
-import { Swiper, SwiperRef, SwiperSlide ,useSwiper } from 'swiper/react';
+import React, { useEffect, useMemo, useRef } from 'react'
+import { Testimonials as ImporteTestmonials } from '@/constants'
+import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Image from 'next/image';
 const Carousel = () => {
-    const swiper = useSwiper();
+  const Testimonials = useMemo(() => ImporteTestmonials, [ImporteTestmonials]);
+
     const swiperRef = useRef<SwiperRef>(null);
     useEffect(() => {
-        if (swiperRef.current) {
-          swiperRef.current.swiper.init();
-        }
-      }, []);
+      if (swiperRef.current) {
+        swiperRef.current.swiper.init();
+      }
+      
+    }, []);
     
       const handleNextSlide = () => {
         if (swiperRef.current && swiperRef.current.swiper) {
@@ -32,13 +34,11 @@ const Carousel = () => {
       ref={swiperRef}          
       spaceBetween={30}
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
       autoplay={{delay:3400, disableOnInteraction:false}}
     >
-     {Testimonials.map((Testimonial,index)=>
-     <div key={index}>
-     <SwiperSlide >
+     {Testimonials.map((Testimonial,index)=> 
+     {
+     return(<SwiperSlide  key={index}>
         <div  className='flexCenter flex-col gap-4 select-none' >
             {/* Star Rating */}
             <div className='flexCenter flex-row gap-1
@@ -60,8 +60,7 @@ const Carousel = () => {
                       <p>{Testimonial.position}</p>
             </div>
         </div>
-     </SwiperSlide>
-     </div>
+     </SwiperSlide>)}
      )} 
     </Swiper>
     </>

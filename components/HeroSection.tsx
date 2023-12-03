@@ -13,7 +13,7 @@ const HeroSection = () => {
           <h1 className='text-[3rem] md:text-[2.5rem]'>Feel Better about Finding <span className='blueBold'>Healthcare</span></h1>
           <p className='text-[1.2rem] md:text-[1rem]'>Healththy 24 Online ranks highest in telehealth satisfaction among direct-to-consumer brands.
           </p>
-          <Button variant={'orange-fill'} title='Get Started' type='button' onClick={()=>{}}/>
+          <Button variant={'orange-fill'} title='Get Started' type='button'/>
           </div>
         </div>
       <Features/>

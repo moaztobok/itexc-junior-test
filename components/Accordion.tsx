@@ -11,7 +11,7 @@ const [show,setShow]= useState<number>(0)
                 <li key={index}
                 onClick={()=>(setShow(index))}>
                 <div className="flex flex-col ">
-                <div className={`flexBetween py-4 text-bgColor align-middle justify-center px-8 mt-2
+                <div className={`flexBetween py-4 text-bgColor align-middle justify-center px-8 mt-2 
                 ${index===show ?'bg-darkColor': 'border border-fontAccentColor rounded-md text-darkColor '}`}>
                 <div className="flex flex-col justify-center align-middle font-roboto font-bold ">
                     <p><span className='text-orangeColor font-semibold'>0{index+1} : </span>{question.question}</p>

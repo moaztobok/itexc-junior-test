@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import NavBar from '@/components/Navbar'
 import '@/styles/globals.css'
+import NavBar from '@/components/Navbar'
 
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='font-poppins overflow-x-hidden text-fontColor'>
-        <NavBar/>
+      <NavBar/>
         {children}
         </body>
     </html>

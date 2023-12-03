@@ -4,7 +4,7 @@ import { Services } from '@/constants'
 import Link from 'next/link'
 const ServicesSection = () => {
   return (
-    <section className='max-container paddingH w-full  flexCenter flex-row-reverse md:flex-col my-10'>
+    <section id='ServicesSection' className='max-container paddingH w-full  flexCenter flex-row-reverse md:flex-col my-10'>
     <div className='lg:w-auto py-10 flex flex-col gap-5'>
       <h2 className='title'>Why Choosing <span className='decorated blueBold'>Healthy 24.</span></h2>
       <p>

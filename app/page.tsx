@@ -12,7 +12,6 @@ import DoctorsSection from '@/components/DoctorsSection'
 import ContactUs from '@/components/ContactUs'
 import Map from '@/components/Map'
 import Footer from '@/components/Footer'
-
 const page = () => {
   return (
     <>

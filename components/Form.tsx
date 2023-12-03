@@ -31,7 +31,7 @@ const Form = () => {
         <input className='input' type='text' name='email' placeholder='Your email address' onChange={handleChange}/> 
         <label htmlFor='message'>Message</label>
         <textarea className='input' name='message' placeholder='Type your message....' onChange={handleChange}/>
-        <Button title='Submit' variant='orange-fill' type='submit' onClick={()=>{}}/>
+        <Button title='Submit' variant='orange-fill' type='submit'/>
     </form>
   )
 }

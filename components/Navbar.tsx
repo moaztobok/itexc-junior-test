@@ -52,7 +52,7 @@ const NavBar = () => {
             <div className='absolute h-screen w-[80%] shadow-2xl top-0 right-0 bg-bgColor flex flex-col py-10 p-5 gap-10 z-50'
             ref={menu}
             style={{transform:`translateX(${showMenu ? '0%' : '100%' })`,display:`${showMenu?'':'none'}`}}>
-                <div className='flexBetween'>
+                <div className='flexBetween w-auto h-auto'>
                 <Image alt='logo' src='./Assets/icons/healthy24Logo.svg' width={100} height={50}/>
                 <button
                 onClick={handleClose}>
@@ -62,7 +62,7 @@ const NavBar = () => {
                 <div className='flex flex-col text-[1.5rem] gap-5'>
                 {
                     Links.map((link, index) =>
-                    <Link key={index} href={link.url} className='duration-200 active:text-orangeColor cursor-pointer'>
+                    <Link onClick={handleClose} key={index} href={link.url} className='duration-200 active:text-orangeColor cursor-pointer'>
                     {link.title}
                     </Link>)
                 }

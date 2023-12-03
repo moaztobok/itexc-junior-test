@@ -5,7 +5,7 @@ import Form from './Form'
 
 const ContactUs = () => {
   return (
-    <section className='min-h-screen w-screen flexCenter'>
+    <section id='ContactSection' className='min-h-screen w-screen flexCenter'>
         <div className='max-container flex flex-1 md:flex-col paddingH gap-7 py-10'>
             <div className='w-full flex flex-col gap-8'>
             <h2 className='title text-blueColor'>Contact Us</h2>
@@ -25,7 +25,7 @@ const ContactUs = () => {
                         <p className='text-fontAccentColor w-[300px]'>{contact.desc}</p>
                         </div>
                     </div>
-                    <div className='w-5/6 border-b-2 border-fontAccentColor'></div>
+                    <div className='lg:w-5/6 border-b-2 border-fontAccentColor'></div>
                     </>
                     )}
             </div>

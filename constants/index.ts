@@ -5,15 +5,15 @@ export const  Links =[
     },
     {
         title:'About Us',
-        url:'/'
+        url:'#AboutSection'
     },
     {
         title:'Our services',
-        url:'/'
+        url:'#ServicesSection'
     },
     {
         title:'Contact us',
-        url:'/'
+        url:'#ContactSection'
     }
 ];
 export const features=[
@@ -78,13 +78,14 @@ export const Testimonials =[
         rating:5
     },
     {
-        desc:'Our caring and supportive team has experience working with patients face-to-face and dealing with mental health issues. Spend less time searching for help and more time connecting with someone you can trust.',
+        desc:'Velit in adipisicing ut esse. Velit cillum sunt do nulla ad ad eu ut. Commodo laboris fugiat aute non excepteur mollit mollit dolor incididunt ea. Irure sunt ipsum eiusmod magna reprehenderit in reprehenderit ea et deserunt. Quis eu pariatur incididunt velit culpa ea.',
         avatar:'/Assets/images/Avatar Image.png',
         name:'Christopher Nolan',
         position:'Our client',
         rating:5
-    },    {
-        desc:'Our caring and supportive team has experience working with patients face-to-face and dealing with mental health issues. Spend less time searching for help and more time connecting with someone you can trust.',
+    },    
+    {
+        desc:'Dolore eu do tempor esse sint nostrud ea irure ex minim tempor consequat proident. Amet adipisicing elit veniam dolor consectetur. Lorem ex minim enim ut irure qui qui non ea aliqua excepteur commodo. Cupidatat id pariatur eiusmod esse velit tempor ex veniam ut in eiusmod nulla labore veniam. Eu excepteur proident labore laboris dolor ad occaecat proident Lorem.',
         avatar:'/Assets/images/Avatar Image.png',
         name:'Christopher Nolan',
         position:'Our client',

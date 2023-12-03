@@ -3,7 +3,7 @@ import React from 'react'
 
 const AboutSection = () => {
   return (
-    <section className='max-container paddingH w-full min-h-screen flexCenter flex-row md:flex-col'>
+    <section id='AboutSection' className='max-container paddingH w-full min-h-screen flexCenter flex-row md:flex-col'>
       <div className='lg:w-1/2 py-10 flex flex-col gap-5'>
         <h2 className='title'>About <span className='blueBold decorated'>Healthy 24.</span></h2>
         <p>

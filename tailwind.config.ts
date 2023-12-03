@@ -41,7 +41,7 @@ const config: Config = {
         }
       },
       animation: {
-        extend: 'extend 0.5s forwards',
+        extend: 'extend 0.5s backwards',
         contract:'contract 0.5s forwards'
       },
       boxShadow: {
