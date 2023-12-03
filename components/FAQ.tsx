@@ -20,7 +20,7 @@ const FAQ = () => {
                         <div className='flex flex-col p-10 gap-7 text-bgColor text-[1.1rem] lg:max-w-[80%]'>
                             <p className='font-semibold'>Still have a question?</p>
                             <p className='font-roboto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <Button title='Contact us' variant='white-fill' type='button' onClick={()=>{}}/>
+                            <Button title='Contact us' variant='white-fill' type='button'/>
                         </div>
                         <Image className='absolute bottom-5 right-5' src='Assets/icons/vector-doctor.svg' width={80} height={100} alt='doctor' />
                     </div>
