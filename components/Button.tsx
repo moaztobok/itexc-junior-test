@@ -1,6 +1,6 @@
 import { type } from 'os'
 import React from 'react'
-type EmptyCallback = () => {};
+type EmptyCallback = () => void;
 
 interface buttonProps{
   title: string,
